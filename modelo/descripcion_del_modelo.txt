@@ -1,0 +1,18 @@
+Se utilizó un modelo de regresión, el cual toma características del carro
+y predice el precio que debe tener. Las características consideradas son
+modelo, marca, carrocería, transmisión, kilometraje, color, ubicación (estado),
+versión (trim) y año del carro. 
+
+El modelo es de gran ayuda para un comerciante que trabaje vendiendo carros
+usados, ya que no tendrá que hacer una investigación para conocer el precio
+que deben tener sus carros, sino que solo con las características podrá
+conocerlo. Además, el precio que arroja el modelo será el correcto, lo que
+ayudará a atraer más clientes.
+
+Como se puede observar, el R2 es 0.951, que es un valor cercano a uno, lo que da fiabilidad de que los valores predichos por el modelo con correctos.
+
+En el gráfico se observa como los valores están cercanos a la línea ideal de regresión, con pocos outliers. Esto confirma las métricas obtenidas, ya que el modelo ajusta bastante bien los datos y el valor predicho es cercano al valor real.
+
+Vemos que las características más importantes son la marca y el año del carro lo que es de esperarse, ya que el precio de un carro varía mucho entre las diferentes marcas y a medida que pasan los años, el valor de un carro usado varía, disminuyendo hasta que se vuelve de colección donde comienza a aumentar nuevamente. Las características que menos afectan el precio del vehículo son el estado, el color y la transmisión, las demás tienen efecto parecido sobre el precio.
+
+Vemos como a medida que aumenta la cantidad de datos, aumenta el rendimiento del modelo hasta los 250.000 datos donde el aumento es despreciable. Además, podemos ver que la distancia entre ambas curvas es solo de 0.02 y que los valores están por encima de 0.94, esto nos permite concluir que no hay sobreajuste ni subajuste del modelo.
