@@ -81,4 +81,5 @@ def model_prediction():
         button = st.button('Calcular precio')
     if button:        
         precio = prediction(vector)
+        st.markdown(f"<h5 style='color: #FFFFFF; text-align: center;'>El precio del carro es:</h5>", unsafe_allow_html=True)
         st.markdown(f"<h4 style='color: #FFFFFF; text-align: center;'>${precio}</h4>", unsafe_allow_html=True)
